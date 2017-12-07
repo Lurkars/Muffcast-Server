@@ -1,0 +1,48 @@
+{
+  "description": "Cast HTML5 video to other Firefox instance. This is the server extension. Install on a device for playing HTML5 Videos in fullscreen. A native application is needed to listen to client commands. Read the README.txt for additonal setup information. On stopped playpack, images from unsplash.com are loaded. If you have an unsplah API account, feel free to enter you API-key.",
+  "manifest_version": 2,
+  "name": "Muffcast Server",
+  "version": "0.1.3",
+  "homepage_url": "https://www.champonthis.de/projects/muffcast",
+  "icons": {
+    "48": "icons/muffcast-server-48.png"
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "muffcast@champonthis.de"
+    }
+  },
+
+  "background": {
+    "scripts": ["background/server.js"]
+  },
+
+  "permissions": [
+    "activeTab",
+    "nativeMessaging",
+    "storage"
+  ],
+
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["muffcast-server.js"]
+  }],
+
+  "options_ui": {
+    "page": "options/options.html",
+    "browser_style": true
+  },
+
+  "content_security_policy": "script-src 'self'; object-src 'self'; img-src 'self' https://source.unsplash.com https://images.unsplash.com;",
+
+  "web_accessible_resources": [
+    "splash/splash.html",
+    "fonts/iAWriterDuospace-Regular.eot",
+    "fonts/iAWriterDuospace-Regular.otf",
+    "fonts/iAWriterDuospace-Regular.svg",
+    "fonts/iAWriterDuospace-Regular.ttf",
+    "fonts/iAWriterDuospace-Regular.woff"
+  ]
+
+}

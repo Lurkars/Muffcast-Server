@@ -1,0 +1,60 @@
+body {
+  font-family: 'OpenSans', 'Roboto', 'sans-serif', 'sans';
+  background: #000;
+  color: #d13d29;
+}
+
+h1 {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+}
+
+h1 i.fa {
+  color: #468ac3;
+}
+
+a, a:hover {
+  color: #468ac3;
+  text-decoration: none;
+}
+
+#background {
+  z-index: 1;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: top left;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: all 1.5s ease-in-out;
+  -moz-transition: all 1.5s ease-in-out;
+  -o-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+  opacity: 0;
+  box-shadow: 0px -150px 150px 0px #000 inset;
+}
+
+.unsplash {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+#description {
+  font-style: italic;
+}
