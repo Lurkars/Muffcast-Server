@@ -7,6 +7,7 @@ This is the server extension. Install on a device for playing HTML5 Videos in fu
 ### Requirements
 - Firefox/Browser instance
 - Internet access
+- Python2 for native application
 
 To benefit of this extension, [Muffcast Client](https://github.com/Lurkars/Muffcast-Client) is required on other Firefox/Browser instance in the same network.
 
