@@ -2,19 +2,19 @@
 An alternative to Chromecast working with every website with HTML5 Video/Audio elements by just playing HTML5 video/audio on other Firefox instance in full-screen.
 
 ## Server
-This is the server extension. Install on a device for playing HTML5 Videos in full-screen controlled by **Muffcast Client**s. 
+This is the server extension. Install on a device for playing HTML5 Videos in full-screen controlled by [Muffcast Client](https://github.com/Lurkars/Muffcast-Client)s. 
 
 ### Requirements
 - Firefox/Browser instance
 - Internet access
 
-To benefit of this extension, **Muffcast Client** is required on other Firefox/Browser instance in the same network.
+To benefit of this extension, [Muffcast Client](https://github.com/Lurkars/Muffcast-Client) is required on other Firefox/Browser instance in the same network.
 
 ### Firefox/Browser Setup
 For full-screen support, following setup in Firefox is required
 In *about:config* `full-screen-api.allow-trusted-requests-only = false`
 
-On stopped playback, images from unsplash.com are loaded. If you have an unsplash API account, feel free to enter you API-key and credit name for Hotlinking.
+On stopped playback, images from unsplash.com are loaded. If you have an unsplash API account, feel free to enter your API-key and credit name for Hotlinking.
 
 ### System Setup
 Native application *muffcast.py* is required for working properly with client extension.
